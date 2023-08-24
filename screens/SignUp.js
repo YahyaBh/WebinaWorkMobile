@@ -23,7 +23,7 @@ export default function SignUp({ navigation }) {
                 },
                 {
                     text: 'Coninue', onPress: () =>
-                        axios.post('https://595b-160-178-103-251.ngrok-free.app/mobile/signup', { username: username, password: password, email: email, confrimPassword: confrimPassword })
+                        axios.post('http://localhost:8000/mobile/signup', { username: username, password: password, email: email, confrimPassword: confrimPassword })
                             .then((res) => {
                                 console.log(res);
                             })
